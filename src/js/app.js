@@ -1,6 +1,17 @@
-// TODO: write your code here
-import sum from './basic';
+import sum from './team';
 
-console.log('worked');
+const char = {
+    name: 'Лучник',
+    type: 'Bowman',
+    health: 50,
+    level: 1,
+    attack: 40,
+    defence: 10
+};
 
-console.log(sum([1, 2]));
+const team = new Team();
+team.addCharacter(char);
+
+for (const character of team) {
+    console.log(character);
+}
